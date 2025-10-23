@@ -1,0 +1,207 @@
+/* ========================================
+   ESTILOS PERSONALIZADOS - JAVERBER
+   Archivo: cambios.css
+   ======================================== */
+
+/* === BLOG === */
+.blog-widget-section {
+  padding: 60px 0;
+  background-color: #f0f0f0;
+}
+
+.dbw-card {
+  max-width: 100%;
+  width: 100%;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  background: #fff;
+  font-family: 'Alan Sans', sans-serif;  
+}
+
+.dbw-card h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #224e74;
+  text-align: center;
+}
+
+/* Estilos para el widget de FeedWind */
+.dbw-card .fw-container {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.dbw-more { 
+  display: block;
+  text-align: center;
+  margin-top: 30px; 
+  padding: 15px 40px;
+  background: #224e74;
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.dbw-more:hover {
+  background: #0a6cff;
+}
+
+/* === TARJETAS DE CITAS === */
+.features03 .item-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.features03 .item-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.features03 .item-img {
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+  height: 400px;
+}
+
+.features03 .item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.features03 .item-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título bold más pequeño */
+.features03 .item-title {
+  color: #224e74;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  min-height: 70px;
+}
+
+/* Duración (🕒 60 min) */
+.features03 .item-content .mbr-text:first-of-type {
+  color: #224e74;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Texto descriptivo */
+.features03 .item-content .mbr-text:nth-of-type(2) {
+  color: #7f7f80;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+/* Espaciado consistente entre tarjetas */
+.features03 .item {
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+/* === ESPACIADO ENTRE SECCIONES === */
+/* Reducir espacio entre tarjetas de citas y galería */
+.features03 {
+  padding-bottom: 3rem !important;
+}
+
+.gallery3 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+/* Reducir espacio después de la galería (antes de la frase) */
+.people07 {
+  padding-top: 3rem !important;
+}
+
+/* === OCULTAR BRANDING FEEDWIND === */
+.fw-container a[href*="feedwind"],
+.fw-container a[href*="feed.mikle"],
+#fw_link,
+.fw_link,
+a[href*="feed.mikle.com"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+.fw-container > div:last-child,
+.fw-footer {
+  display: none !important;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 991px) {
+  .features03 .item-img {
+    height: 350px;
+  }
+  
+  .features03 .item-title {
+    font-size: 1.05rem;
+    min-height: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Blog */
+  .dbw-card {
+    padding: 20px;
+  }
+  
+  .dbw-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  /* Tarjetas de citas */
+  .features03 .item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .features03 .item-img {
+    height: 300px;
+  }
+  
+  .features03 .item-title {
+    min-height: auto;
+    font-size: 1rem;
+  }
+  
+  .features03 .item-content {
+    padding: 1.25rem;
+  }
+  
+  /* Espaciado móvil */
+  .features03 {
+    padding-bottom: 2rem !important;
+  }
+  
+  .gallery3 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  
+  .people07 {
+    padding-top: 2rem !important;
+  }
+}
