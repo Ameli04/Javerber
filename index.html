@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -780,7 +781,6 @@
   }
 </style>
 
-
 <style>
   /* Responsive para dispositivos móviles - Blog Section */
   @media (max-width: 768px) {
@@ -789,9 +789,15 @@
       padding: 40px 0 !important;
     }
     
-    /* Ajustar contenedor del carousel */
+    /* Ajustar contenedor del carousel - más espacio para las tarjetas */
     #blog-section .carousel-wrapper {
-      padding: 0 50px !important;
+      padding: 0 15px !important;
+    }
+    
+    /* Contenedor principal con más padding lateral */
+    #blog-section .container-fluid {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
     }
     
     /* Título responsive */
@@ -852,10 +858,12 @@
       height: 18px !important;
     }
     
-    /* Botones de navegación más pequeños */
+    /* Botones de navegación más pequeños y semi-transparentes */
     .nav-btn {
       width: 36px !important;
       height: 36px !important;
+      background: rgba(255, 255, 255, 0.85) !important;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
     }
     
     .nav-btn svg {
@@ -863,13 +871,13 @@
       height: 16px !important;
     }
     
-    /* Ajustar posición de botones en móvil */
+    /* Ajustar posición de botones en móvil - más pegados al borde */
     .prev-btn {
-      left: 5px !important;
+      left: -5px !important;
     }
     
     .next-btn {
-      right: 5px !important;
+      right: -5px !important;
     }
     
     /* Indicadores más pequeños */
@@ -896,10 +904,35 @@
     }
     
     #blog-section .carousel-wrapper {
-      padding: 0 45px !important;
+      padding: 0 12px !important;
+    }
+    
+    .prev-btn {
+      left: -8px !important;
+    }
+    
+    .next-btn {
+      right: -8px !important;
+    }
+  }
+  
+  /* Para Samsung S20 FE y pantallas similares (360px-415px) */
+  @media (min-width: 360px) and (max-width: 415px) {
+    #blog-section .carousel-wrapper {
+      padding: 0 12px !important;
+      max-width: 100% !important;
+    }
+    
+    .post-card-elfsight {
+      margin: 0 !important;
+    }
+    
+    #tumblr-carousel {
+      gap: 15px !important;
     }
   }
 </style>
+
 
 <script>
   let allPosts = [];
